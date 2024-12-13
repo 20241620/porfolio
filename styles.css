@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    background-color: #5a5a5a;
+    align-items: center;
+    justify-content: space-between;
+}
+h1
+{ color: #9e9090;
+    font-size: 2em;
+    justify-content: center;
+    display: flex;
+
+}
+header nav ul {
+    display: flex;
+    gap: 4em;
+}
+header nav ul li a {
+    color: white;
+    font-size: 1,5em;
+    justify-content: center;
+    display: flex;
+}
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0,8em;
+}
+
+
+/* Estilo específico para la sección 1 */
+.section-1 {
+    background-color:#b59a61 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    }
+
+
+.acerca-de h2 {
+    font-size: 1.8rem;
+    color: rgb(246, 238, 227); /* Color destacado */
+    margin-bottom: 10px;
+}
+
+
+.acerca-de p {
+    font-size: 1.2rem;
+    color: rgb(4, 4, 4);
+    margin-bottom: 10px ;
+}
+
+.acerca-imagen img {
+    display: flex;
+    justify-content: center;
+    width: 150px; /* Ajusta el ancho deseado */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px; /* Opcional: agrega esquinas redondeadas */
+}
+
+
+.section-2 img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: 900px;
+}
+
+/*--- estilos para tarjetas ---*/
+.seccion-3 {
+    padding: 20px;
+    background-color: #b59a61;
+ }
+  .titulo-3 {
+    color: white;
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+    text-align: center;
+    
+ }
+ 
+ 
+ .tarjetas {
+    display: flex; /* Coloca las tarjetas en una fila */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a nuevas líneas */
+    gap: 20px; /* Espacio entre cada tarjeta */
+    justify-content: flex-start; /* Alinea las tarjetas a la izquierda, no distribuye el espacio */
+ }
+  .tarjeta {
+    flex: 0 1 30%; /* Establece que las tarjetas deben ocupar aproximadamente un 30% del contenedor */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total de la tarjeta */
+    padding: 10px; /* Espacio dentro de cada tarjeta */
+    display: flex; /* Usamos flex para que la imagen y el texto se comporten como un contenedor flexible */
+    flex-direction: column; /* Asegura que la imagen y el texto estén uno debajo del otro */
+    min-width: 250px; /* Garantiza que la tarjeta no se vuelva demasiado pequeña */
+    max-width: 33%; /* Garantiza que no ocupe más del 33% del contenedor */
+ }
+ 
+ 
+ .imagen-tarjeta img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Cubre el área de la imagen sin distorsionar */
+    border-radius: 10px;
+ }
+ 
+ 
+ .texto-tarjeta {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    flex-grow: 0; /* Evita que el texto se expanda */
+    overflow: hidden; /* Asegura que el contenido que sobrepase el contenedor no sea visible */
+    text-overflow: ellipsis; /* Opcional: agrega puntos suspensivos si el texto es demasiado largo */
+ }
+ 
+ 
+ .texto-tarjeta p {
+    height: 60px; /* Ajusta la altura según lo que necesites */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+ 
+
+
+footer {
+    background-color: #555;
+    width: 100%;
+    align-items: center;
+    padding: 1px;
+}
+
+h4 {
+    color: white;
+    display: flex;
+    font-size: 1.6em;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer a i {
+    font-size: 3em;
+    color: salmon;
+    justify-content:center;
+    display: flex;
+}
+/* Efecto al pasar el cursor sobre los elementos de la lista */
+footer ul li a:hover {
+    color: #ff4081; /* Color del ícono cuando se pasa el ratón */
+    cursor: pointer;
+}
+
+
+    #check {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+    }
+    
+     /* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+  }
+  
